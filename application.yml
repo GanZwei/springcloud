@@ -1,0 +1,24 @@
+spring:
+  profiles:
+    active: dev
+---
+server:
+  port: 3256
+spring:
+  application:
+    name: MICRO-SERVER-DEV
+   profiles: dev
+---
+server:
+  port: 3257
+spring:
+  application:
+    name: MICRO-SERVER-TEST
+   profiles: test
+---
+server:
+  port: 3258
+spring:
+  application:
+    name: MICRO-SERVER-PRO
+   profiles: pro
